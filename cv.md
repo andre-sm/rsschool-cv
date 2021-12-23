@@ -1,4 +1,5 @@
 # Andrei Smolich
+![Andrey](./img/andrey.jpg)
 
 ***
 ## Contacts
@@ -9,6 +10,9 @@
 
 ***
 ## About me
+Throughout my career as a marketing specialist, I have repeatedly faced the challenges related to the IT sphere. Starting from the making of a small landing page to building a layout of own online shop. It was also site advertising and site maintenance, writing small javascript scripts for page layout and minor changes to the existing javascript code.
+
+So, now I decided to gather knowledge together and try myself as a javascript front-end developer. My goal is to get a job in a friendly team and gain experience in this fast-growing world of javascript.
 
 *** 
 ## Skills
