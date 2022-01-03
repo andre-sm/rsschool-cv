@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+:root {
+  --main-bg-color: #d4d1ce;
+  --text-color-black: #000;
+  --section-bg-color: #fff;
+  --white: #fff;
+  --nav-bg-color: #534e48;
+  --nav-hover-color: #b1aba5;
+  --code-bg-color: #edeceb;
+}
+
 * {
-  box-sizing: border-box;
   margin: 0; 
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth; 
 }
 
@@ -18,8 +29,27 @@ body {
   justify-content: space-between;
   font-size: 18px;
   font-weight: 300;
-  color: #343434;
-  background-color: #d4d1ce;
+  color: var(--text-color-black);
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: 12px;
+}
+
+h2 {
+  color: var(--text-color-black);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 2px solid var(--text-color-black);
+  font-size: 24px;
 }
 
 .container {
@@ -27,15 +57,21 @@ body {
   margin: 0 auto;
 }
 
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .section {
-  background-color: #fff;
+  background-color: var(--section-bg-color);
   margin-top: 40px;
   border-radius: 5px;
   padding: 30px 40px 25px 45px;
 }
 
 .nav {
-  background-color: #534e48;
+  background-color: var(--nav-bg-color);
 }
 
 .nav__list {
@@ -50,39 +86,188 @@ body {
 }
 
 .nav__link {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: color 0.3s;
 }
 
-.nav__link:hover {
-  color: #b1aba5;
+.nav__link:hover,
+.footer__github a:hover {
+  color: var(--nav-hover-color);
 }
 
-.main-container {
+#profile {
+  height: 250px;
+  background-image: url(./assets/img/texture.png), linear-gradient(to right, var(--nav-bg-color), var(--nav-hover-color), var(--nav-bg-color));
+  flex: 0 1 100%;
   display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 5px 5px;
 }
 
-h1 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 44px;
-  font-weight: 300;
-  letter-spacing: 12px;
+#about-me {
+  flex: 0 1 60%;
 }
 
-h2 {
-  color: #1d1d1d;
+.profile__name-box {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__name {
+  display: block;
+}
+
+.profile__surname {
+  display: block;
+  margin-left: 68px;
+}
+
+.profile__photo-box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile__job-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 40%;
+  color: var(--white);
   text-transform: uppercase;
-  padding-bottom: 10px;
-  letter-spacing: 2px;
-  font-weight: 400;
-  display: inline-block;
-  border-bottom: 2px solid #534e49;
+}
+
+.profile__title-up {
+  font-size: 38px;
+  letter-spacing: 20px;
+}
+
+.profile__title-down {
+  margin-top: 5px;
   font-size: 24px;
+  letter-spacing: 6px;
+}
+
+.contacts__list,
+.about-me__summary,
+.education__list,
+.experience__list,
+.skills__list,
+.languages__list {
+  margin-top: 20px;
+}
+
+.contacts__item {
+  padding: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.contacts__location {
+  background-image: url("./assets/svg/location.svg");
+}
+
+.contacts__email {
+  background-image: url("./assets/svg/email.svg");
+}
+
+.contacts__telegram {
+  background-image: url("./assets/svg/telegram.svg");
+}
+
+.contacts__github {
+  background-image: url("./assets/svg/github.svg");
+}
+
+.contacts__github-link,
+.education__item a,
+.experience__projects a {
+  color: var(--text-color-black);
+  transition: color 0.3s;
+}
+
+.contacts__github-link:hover,
+.education__item a:hover,
+.experience__projects a:hover {
+  color: var(--nav-hover-color);
+}
+
+.contacts__discord {
+  width: 36px;
+  height: 28px;
+  margin-right: 0;
+  background-image: url("./assets/svg/discord.svg");
+}
+
+.education__item,
+.experience__item,
+.skills__item,
+.languages__item {
+  padding: 3px 0;
+}
+
+.education__item::before,
+.experience__item::before,
+.skills__item::before,
+.languages__item::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  background-image: url(./assets/svg/chevron-right.svg);
+}
+
+.experience__projects {
+  margin-top: 10px;
+}
+
+pre {
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--code-bg-color);
+  white-space: pre-wrap;
+}
+
+.footer__info {
+  margin-top: 40px;
+  background-color: var(--nav-bg-color);
+  border-radius: 5px 5px 0 0;
+  color: var(--white);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+}
+
+.footer__github a {
+  margin-left: 20px;
+  color: var(--white);
+  transition: color 0.3s;
+}
+
+.footer__rss-logo {
+  height: 40px;
+}
+
+.more-weight {
+  font-weight: 400;
 }
