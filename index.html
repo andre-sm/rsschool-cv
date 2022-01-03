@@ -1,1 +1,124 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">  
+  <link rel="icon" href="assets/ico/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#contacts" class="nav__link">Contacts</a></li>
+          <li><a href="#about-me" class="nav__link">About me</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#code" class="nav__link">Code</a></li>
+          <li><a href="#languages" class="nav__link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container main-container">
+      <section class="section" id="profile">
+        <div class="profile__name-box">
+          <h1>
+            <span class="profile__name">Andrei</span>
+            <span class="profile__surname">Smolich</span>
+          </h1>
+        </div>
+        <div class="profile__photo-box">
+            <img src="./assets/img/photo.png" alt="my photo">
+        </div>  
+        <div class="profile__job-title">
+          <span class="profile__title-up">Junior</span>
+          <span class="profile__title-down">Frontend Developer</span> 
+        </div>
+      </section>
+      <section class="section" id="contacts">
+        <h2>Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item"><i class="contacts__icon contacts__location"></i><span>Grodno, Belarus</span></li>
+          <li class="contacts__item"><i class="contacts__icon contacts__email"></i><span>andy.smolich@gmail.com</span></li>
+          <li class="contacts__item"><i class="contacts__icon contacts__telegram"></i><span>@telegram</span></li>
+          <li class="contacts__item"><i class="contacts__icon contacts__github"></i><a href="https://github.com/andre-sm" class="contacts__github-link">andre-sm</a></li>
+          <li class="contacts__item"><i class="contacts__icon contacts__discord"></i><span>@andre-sm</span></li>
+        </ul>
+      </section>
+      <section class="section" id="about-me">
+        <h2>About me</h2>
+        <p class="about-me__summary">Throughout my career as a marketing specialist, I have repeatedly faced the challenges related to the IT sphere. Starting from the making of a small landing page to building a layout of own online shop. 
+          It was also site advertising and site maintenance, writing small javascript scripts for page layout and minor changes to the existing javascript code.<br><br>
+          So, now I decided to gather knowledge together and try myself as a javascript frontend developer. My goal is to get a job in a friendly team and gain experience in this fast-growing world of javascript.
+        </p>
+      </section>
+      <section class="section" id="education">
+        <h2>Education & Courses</h2>
+        <ul class="education__list">
+          <li class="education__item"><span class="more-weight">Yanka Kupala State University of Grodno</span> - World economy</li>
+          <li class="education__item"><a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">Udemy</a> - <span class="more-weight">The Complete JavaScript Course 2021: From Zero to Expert!</span></li>
+          <li class="education__item"><a href="https://rs.school/js-stage0/">RS School</a> - <span class="more-weight">JavaScript/Front-end. Stage 0</span> (in progress)</li>
+        </ul>
+      </section>
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <ul class="experience__list">
+          <li class="experience__item"><span class="more-weight">CHPUP "West Diamant"</span> - Marketing specialist</li>
+          <li class="experience__item">Self-employed entrepreneur - <span class="more-weight">"Take Me Home"</span> online shop owner</li>
+        </ul>
+        <p class="experience__projects">Projects: <span class="more-weight"><a href="https://andre-sm.github.io/rsschool-cv/cv">CV. Markdown & Git</a></span></p>
+      </section>
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML5</li>
+          <li class="skills__item">CSS3</li>
+          <li class="skills__item">JavaScript</li>
+          <li class="skills__item">React</li>
+          <li class="skills__item">Git</li>
+          <li class="skills__item">Photoshop</li>
+        </ul>
+      </section>
+      <section class="section" id="code">
+        <h2>Code</h2>
+        <pre>
+          <code>
+function sumOrProduct(array, n) {<br>
+    const sortedArray = array.sort((a, b) =&gt; a - b);<br>
+    const sum = sortedArray.slice(-n).reduce((cur, acc) =&gt; cur + acc, 0);
+    const prod = sortedArray.slice(0, n).reduce((cur, acc) =&gt; cur * acc, 1);<br>
+    return sum &gt; prod ? 'sum' : sum &lt; prod ? 'product' : 'same';
+}</code>
+        </pre>
+      </section>
+      <section class="section" id="languages">
+        <h2>Languages</h2>
+        <ul class="languages__list">
+          <li class="languages__item">English (B1)</li>
+          <li class="languages__item">Polish (B1)</li>
+          <li class="languages__item">Belarussian (native)</li>
+          <li class="languages__item">Russian (native)</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__info">
+        <div class="footer__github">
+          <span class="footer__year">&#64; 2022</span>
+          <a href="https://github.com/andre-sm">Andrei Smolich</a>
+        </div>
+        <a href="https://rs.school/js/"><img src="./assets/svg/rs_school.svg" alt="rs school logo" class="footer__rss-logo"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
