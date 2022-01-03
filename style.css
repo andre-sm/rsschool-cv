@@ -271,3 +271,162 @@ pre {
 .more-weight {
   font-weight: 400;
 }
+
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .profile__title-down {
+    font-size: 20px;
+  }
+
+  #about-me {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #profile {
+    height: 200px;
+  }
+
+  .profile__photo-box img {
+    height: 90%;
+  }
+
+  #code {
+    flex: 0 1 50%;
+  }
+
+  .profile__title-up {
+    font-size: 28px;
+  }
+
+  .profile__title-down {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 896px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .section {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .nav__list li {
+    padding: 20px 10px 25px 10px;
+    font-size: 14px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  #about-me,
+  #experience,
+  #code,
+  #education {
+    flex: 0 1 85%;
+  }
+
+  .profile__photo-box img {
+    height: 87%;
+  }
+
+  .profile__surname {
+    margin-left: 28px;
+  }
+
+  .profile__title-up {
+    font-size: 24px;
+    letter-spacing: 18px;
+  }
+
+  .profile__title-down {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+
+  .footer__info {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .footer__rss-logo {
+    height: 30px;
+  }
+}
+
+@media (max-width: 668px) {
+  .nav__list {
+    flex-wrap: wrap;
+  }
+
+  .nav__list li {
+    padding: 5px 5px 10px 5px;
+  }
+
+  #profile {
+    flex-direction: column;
+    height: 140px;
+  }
+
+  #contacts,
+  #about-me, 
+  #skills,
+  #education,
+  #languages,
+  #experience,
+  #code {
+    flex: 0 1 85%;
+  }
+
+  .profile__photo-box {
+    display: none;
+  }
+
+  .profile__name-box {
+    order: -1;
+  }
+
+  .profile__name {
+    text-align: center;
+  }
+
+  .profile__surname {
+    margin-left: 0;
+  }
+
+  .profile__job-title {
+    order: -1;
+  }
+
+  .profile__title-up {
+    font-size: 22px;
+  }
+
+  .profile__title-down {
+    font-size: 18px;
+  }
+}
