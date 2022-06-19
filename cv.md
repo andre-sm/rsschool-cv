@@ -1,12 +1,11 @@
 # Andrei Smolich
-![Andrey](./img/andrey.jpg)
 
 ***
 ## Contacts
-* Location: Grodno, Belarus
+* Location: Poland
 * Email: andy.smolich@gmail.com
 * Github: https://github.com/andre-sm
-* Discord: @andre-sm
+* Discord: @andrei-s#4581
 
 ***
 ## About me
